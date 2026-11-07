@@ -1,0 +1,261 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+@namespace xul url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+@namespace html url("http://www.w3.org/1999/xhtml");
+
+/* ::::: primary toolbar buttons ::::: */
+
+#compose-toolbox .toolbarbutton-1 .toolbarbutton-icon {
+  min-width: 26px;
+  min-height: 26px;
+}
+
+#compose-toolbox[iconsize="small"] .toolbarbutton-1 .toolbarbutton-icon {
+  min-width: 20px;
+  min-height: 20px;
+}
+
+#button-send {
+  list-style-image: url("button-send.png");
+}
+
+#button-contacts {
+  list-style-image: url("button-contacts.png") !important;
+}
+
+#spellingButton {
+  list-style-image: url("spellingButton.png");
+}
+
+#button-attach {
+  list-style-image: url("button-attach.png");
+}
+
+#button-security {
+  list-style-image: url("button-security.png");
+}
+
+#button-encryption {
+  list-style-image: url("../icons/key.png");
+}
+
+#button-encryption-options {
+  list-style-image: url("../icons/privacy.png");
+}
+
+#button-signing {
+  list-style-image: url("button-signing.png");
+}
+
+#button-save {
+  list-style-image: url("button-save.png") !important;
+}
+
+#quoteButton {
+  list-style-image: url("../icons/quote.png");
+}
+
+#cut-button {
+  list-style-image: url("../icons/cut.png");
+}
+
+#copy-button {
+  list-style-image: url("../icons/copy.png");
+}
+
+#paste-button {
+  list-style-image: url("../icons/paste.png");
+}
+
+#button-returnReceipt {
+  list-style-image: url("../icons/receipt.png");
+}
+
+/* :::: autocomplete icons :::: */
+
+.autocomplete-richlistitem[type="local-abook"] > .ac-site-icon {
+  list-style-image: url("addrbook.png");
+}
+
+.autocomplete-richlistitem[type="remote-abook"] > .ac-site-icon {
+  list-style-image: url("remote-addrbook.png");
+}
+
+.autocomplete-richlistitem[type="remote-err"] > .ac-site-icon {
+  list-style-image: url("remote-addrbook-error.png");
+}
+
+/* ::::: addressing widget ::::: */
+
+/*
+treechildren::-moz-tree-image(GeneratedName) {
+  margin-inline-end: 2px;
+  list-style-image: url("abcard.png");
+}
+
+treechildren::-moz-tree-image(GeneratedName, MailList) {
+  margin-inline-end: 2px;
+  list-style-image: url("ablist.png");
+}
+*/
+
+/* ::::: format toolbar ::::: */
+
+#FormatToolbar > toolbarbutton {
+  opacity: .85;
+}
+
+#AbsoluteFontSizeButton {
+  list-style-image: url("font-size.png");
+}
+
+#DecreaseFontSizeButton {
+  list-style-image: url("decrease.png");
+}
+
+#IncreaseFontSizeButton {
+  list-style-image: url("increase.png");
+}
+
+#boldButton {
+  list-style-image: url("bold.png");
+}
+
+#italicButton {
+  list-style-image: url("italic.png");
+}
+
+#underlineButton {
+  list-style-image: url("underline.png");
+}
+
+#removeStylingButton {
+  list-style-image: url("remove-style.png");
+}
+
+#ulButton {
+  list-style-image: url("bulleted.png");
+}
+
+#olButton {
+  list-style-image: url("numbered.png");
+}
+
+#outdentButton {
+  list-style-image: url("outdent.png");
+}
+
+#indentButton {
+  list-style-image: url("indent.png");
+}
+
+#AlignPopupButton {
+  list-style-image: url("align-left.png");
+}
+
+#InsertPopupButton {
+  list-style-image: url("insert.png");
+}
+
+#smileButtonMenu {
+  list-style-image: url("smile.png");
+}
+
+/* ..... align menu ..... */
+
+
+#AlignLeftItem, #AlignPopupButton[state="left"] {
+  list-style-image: url("align-left.png");
+}
+
+#AlignCenterItem, #AlignPopupButton[state="center"] {
+  list-style-image: url("align-center.png");
+}
+
+#AlignRightItem, #AlignPopupButton[state="right"] {
+  list-style-image: url("align-right.png");
+}
+
+#AlignJustifyItem, #AlignPopupButton[state="justify"] {
+  list-style-image: url("align-justify.png");
+}
+
+/* ..... insert menu ..... */
+
+#InsertPopupButton {
+  list-style-image: url("image.png");
+}
+
+#InsertLinkItem {
+  list-style-image: url("link.png");
+}
+
+#InsertAnchorItem {
+  list-style-image: url("anchor.png");
+}
+
+#InsertImageItem {
+  list-style-image: url("image.png");
+}
+
+#InsertHRuleItem {
+  list-style-image: url("hrule.png");
+}
+
+#InsertTableItem {
+  list-style-image: url("table.png");
+}
+
+/* ..... fg/bg color picker ..... */
+
+.color-button {
+  border: 1px solid rgba(24, 24, 24, .32);
+  padding: 0px;
+  width: 14px;
+  height: 12px;
+  margin: 2px;
+}
+
+.color-button:hover {
+  border: 1px solid ThreeDDarkShadow;
+}
+
+.color-button[disabled="true"],
+.color-button[disabled="true"]:hover {
+  border: 1px solid rgba(24, 24, 24, .32);
+  outline: 1px solid rgba(255,255,255,.4);
+  outline-offset: -1px;
+  box-shadow: inset 0 0 4em rgba(255,255,255,.5);
+}
+
+#TextColorButton {
+  margin-top: 2px;
+  margin-bottom: 9px;
+  margin-inline-start: 2px;
+  margin-inline-end: 9px;
+}
+
+#BackgroundColorButton {
+  margin-top: 9px;
+  margin-bottom: 2px;
+  margin-inline-start: 9px;
+  margin-inline-end: 2px;
+}
+
+/* ..... thunderHTMLedit ..... */
+
+#thunderHTMLedit-content-tab > radiogroup > radio {
+  text-shadow: none;
+}
+
+/* ..... CardBook ..... */
+
+toolbar[brighttext] #cardbookComposeToolbarButton.toolbarbutton-1,
+#cardbookComposeToolbarButton.toolbarbutton-1 {
+  list-style-image: url("../cardbook/cardbook_24.png");
+}
+toolbar[iconsize="small"] #cardbookComposeToolbarButton.toolbarbutton-1 {
+  list-style-image: url("../cardbook/cardbook_16.png");
+}

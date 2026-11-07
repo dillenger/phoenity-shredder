@@ -1,0 +1,22 @@
+Changelog for Phoenity Shredder
+
+4.4
+Changed max version to Thunderbird 161.*.
+
+4.3
+Fixed some background colors.
+Changed max version to Thunderbird 159.*.
+
+4.2
+Fixed and added some icons.
+Changed max version to Thunderbird 158.*.
+
+4.1
+Fixed backgrounds and colors for Thunderbird 157.
+Changed max version to Thunderbird 157.*.
+
+4.0
+Content Security Policies in Thunderbird 153.2.0esr and Thunderbird 155.0 break the Phoenity Icons add-on.
+This theme can be used as a replacement, these are the original icons as they are used in the Phoenity Icons add-on.
+This theme, like Phoenity Icons, is loosely based on the original Phoenity Shredder theme, which can not be updated.
+Unfortunately it can not be combined with other (background) themes, it will respect the OS theme (dark/light).

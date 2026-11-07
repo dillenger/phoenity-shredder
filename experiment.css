@@ -1,0 +1,70 @@
+/* dark theme fixes */
+@import url(content/skin/chat.css);
+@import url(content/skin/calendar/calendar.css);
+@import url(content/skin/icons.css);
+@import url(content/skin/mailWindow1.css);
+@import url(content/skin/messenger.css);
+@import url(content/skin/messengercompose/messengercompose.css);
+@import url(content/skin/primaryToolbar.css);
+@import url(content/skin/quickFilterBar.css);
+
+#searchInput {
+  --search-bar-color: light-dark(#111, #ddd);
+  --search-bar-background: light-dark(#eee, #222);
+  --search-bar-focus-background: light-dark(#eee, #222);
+}
+
+#searchTerms .button-box,
+#searchResults,
+#searchableFolders,
+#serverMenu,
+#filterActionButtons,
+#runFiltersFolder,
+#runFiltersButton,
+richlistbox > richlistitem {
+  color: light-dark(#111, #ddd) !important;
+  --lwt-text-color: light-dark(#111, #ddd);
+}
+
+#searchMailWindow,
+#filterListDialog,
+#subscribeWindow,
+#searchTermListBox,
+#filterActionsBox,
+#FilterEditor,
+#feedSubscriptions,
+#enigmailKeyManager {
+  background-size: 200% 150%;
+  background-position-x: 100%;
+}
+
+#FilterEditor {
+  padding-inline-start: 0px;
+}
+
+#searchTermBox,
+#searchResults,
+#searchTermListBox,
+#filterActionsBox,
+#FilterEditor dialog,
+#subscribeWindow dialog,
+#subscriptionsDialog,
+#openPgpKeyManagerDialog {
+  background-color: transparent !important;
+}
+
+body {
+  background-color: -moz-Dialog;
+}
+
+#FilterEditor #gray_horizontal_splitter {
+  background-color: var(--toolbar-bgcolor);
+  border-color: hsla(0, 0%, 50%, 0.3);
+  margin-top: 2px;
+  margin-inline: -10px;
+  min-block-size: 4px;
+}
+
+#quotaLabel {
+  color: inherit;
+}

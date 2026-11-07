@@ -1,0 +1,51 @@
+{
+  "manifest_version": 2,
+  "name": "Phoenity Shredder",
+  "description": "The original Phoenity Icons theme revisited",
+  "version": "4.4",
+  "author": "Dillinger",
+  "homepage_url": "https://addons.phoenity.nl/themes.html",
+  "theme": {
+    "images": {
+      "additional_backgrounds": ["header.png"]
+    },
+    "colors": {
+      "frame": "#eee",
+      "tab_selected": "#eee",
+      "tab_line": "accentcolor",
+      "tab_background_text": "#222",
+      "tab_text": "#222"
+    },
+    "properties": {
+      "color_scheme": "light"
+    }
+  },
+  "dark_theme": {
+    "images": {
+      "additional_backgrounds": ["dark_header.png"]
+    },
+    "colors": {
+      "frame": "#222",
+      "tab_selected": "#222",
+      "tab_line": "accentcolor",
+      "tab_background_text": "#eee",
+      "tab_text": "#eee"
+    },
+    "properties": {
+      "color_scheme": "dark"
+    }
+  },
+  "theme_experiment": {
+    "stylesheet": "experiment.css"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "shredder@phoenity.nl",
+      "strict_min_version": "115.0",
+      "strict_max_version": "162.*"
+    }
+  },
+  "icons": {
+    "32": "icon.png"
+  }
+}

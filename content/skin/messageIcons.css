@@ -1,0 +1,210 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+@namespace xul url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+@namespace html url("http://www.w3.org/1999/xhtml");
+
+/* ..... thread column ..... */
+
+treecol.threadColumnHeader {
+  list-style-image: url("./icons/thread-col.svg");
+}
+
+treechildren::-moz-tree-image(threadCol, container) {
+  list-style-image: url("./icons/thread.png");
+}
+
+treechildren::-moz-tree-image(threadCol, container, new) {
+  list-style-image: url("./icons/thread-hasnew.png");
+}
+
+treechildren::-moz-tree-image(threadCol, watch) {
+  list-style-image: url("./icons/thread-watched.png");
+}
+
+treechildren::-moz-tree-image(threadCol, watch, new) {
+  list-style-image: url("./icons/thread-watched-hasnew.png");
+}
+
+treechildren::-moz-tree-image(threadCol, ignoreSubthread) {
+  list-style-image: url("./icons/subthread-ignored.png");
+}
+
+treechildren::-moz-tree-image(threadCol, ignore) {
+  list-style-image: url("./icons/thread-ignored.png");
+}
+
+/* ..... read column ..... */
+
+treecol.readColumnHeader {
+  list-style-image: url("./icons/readcol.svg");
+}
+
+treechildren::-moz-tree-image(unreadButtonColHeader) {
+  list-style-image: url("./icons/readmail.png");
+  margin-inline-start: -1px;
+}
+
+treechildren::-moz-tree-image(unreadButtonColHeader, unread) {
+  list-style-image: url("./icons/unreadmail.png");
+}
+
+/* ..... attachment column ..... */
+
+/*
+treecol.attachmentColumnHeader {
+  list-style-image: url("./icons/attachment-col.svg");
+}
+*/
+
+treechildren::-moz-tree-image(attachmentCol, attach) {
+/*
+  list-style-image: url("./icons/attachment.svg");
+*/
+  margin-inline-start: -3px;
+}
+
+/*
+treechildren::-moz-tree-image(attachmentCol, attach, selected, focus) {
+  fill: currentColor;
+}
+*/
+
+/* ..... flag column ..... */
+
+treecol.flagColumnHeader {
+  list-style-image: url("./icons/star-col.svg");
+}
+
+treechildren::-moz-tree-image(flaggedCol) {
+  list-style-image: none;
+}
+
+treechildren::-moz-tree-image(flaggedCol, flagged) {
+  list-style-image: var(--icon-star);
+  margin-inline-start: 1px;
+}
+
+/* ..... junkStatus column ..... */
+
+treecol.junkStatusHeader {
+  list-style-image: url("./icons/junk-col.svg");
+}
+
+treechildren::-moz-tree-image(junkStatusCol) {
+  list-style-image: url("./icons/readmail.png");
+  margin-inline-start: -1px;
+}
+
+treechildren::-moz-tree-image(junkStatusCol, junk) {
+  list-style-image: url("./icons/junk.png");
+}
+
+treechildren::-moz-tree-image(junkStatusCol, notjunk) {
+  list-style-image: url("./icons/notjunk.png");
+}
+
+/* ..... correspondent column ..... */
+
+treechildren::-moz-tree-image(correspondentCol, incoming) {
+  list-style-image: url("./icons/message-incoming.svg");
+}
+
+treechildren::-moz-tree-image(correspondentCol, outgoing) {
+  list-style-image: url("./icons/message-outgoing.svg") !important;
+}
+
+/* ..... subject column ..... */
+
+treechildren::-moz-tree-image(subjectCol) {
+  -moz-margin-end: 4px;
+  list-style-image: url("./icons/message-mail.png");
+}
+
+treechildren::-moz-tree-image(subjectCol, read) {
+  list-style-image: url("./icons/message-mail-read.png");
+}
+
+treechildren::-moz-tree-image(subjectCol, forwarded) {
+  list-style-image: url("./icons/message-mail-forwarded.png");
+}
+
+treechildren::-moz-tree-image(subjectCol, read, forwarded) {
+  list-style-image: url("./icons/message-mail-read-forwarded.png");
+}
+
+treechildren::-moz-tree-image(subjectCol, replied) {
+  list-style-image: url("./icons/message-mail-replied.png");
+}
+
+treechildren::-moz-tree-image(subjectCol, read, replied) {
+  list-style-image: url("./icons/message-mail-read-replied.png");
+}
+
+treechildren::-moz-tree-image(subjectCol, replied, forwarded) {
+  list-style-image: url("./icons/message-mail-replied-forwarded.png");
+}
+
+treechildren::-moz-tree-image(subjectCol, read, replied, forwarded) {
+  list-style-image: url("./icons/message-mail-read-replied-forwarded.png");
+}
+
+treechildren::-moz-tree-image(subjectCol, new) {
+  list-style-image: url("./icons/message-mail-new.png");
+}
+
+treechildren::-moz-tree-image(subjectCol, news) {
+  list-style-image: url("./icons/message-news-grey.png");
+}
+
+treechildren::-moz-tree-image(subjectCol, news, forwarded) {
+  list-style-image: url("./icons/message-news-forwarded.png");
+}
+
+treechildren::-moz-tree-image(subjectCol, news, replied) {
+  list-style-image: url("./icons/message-news-replied.png");
+}
+
+treechildren::-moz-tree-image(subjectCol, news, replied, forwarded) {
+  list-style-image: url("./icons/message-news-replied-forwarded.png");
+}
+
+treechildren::-moz-tree-image(subjectCol, news, new) {
+  list-style-image: url("./icons/message-news-new.png");
+}
+
+treechildren::-moz-tree-image(subjectCol, rss) {
+  list-style-image: url("./icons/rss-feed.png");
+}
+
+treechildren::-moz-tree-image(subjectCol, rss, forwarded) {
+  list-style-image: url("./icons/rss-feed-forwarded.png");
+}
+
+treechildren::-moz-tree-image(subjectCol, rss, new) {
+  list-style-image: url("./icons/rss-feed-new.png");
+}
+
+/* IMPORTANT: make sure the imap-deleted column always comes after the replied/forwarded style rules.
+   This ensures that we show that the message is marked as deleted over status information. */
+
+treechildren::-moz-tree-image(subjectCol, imapdeleted) {
+  list-style-image: url("./icons/message-imapdeleted.png");
+}
+
+#sizeCol,
+#unreadCol,
+#totalCol {
+  text-align: right;
+}
+
+/* Make sure the min height is small so we can resize the pane vertically. */
+
+#messagepanebox {
+  min-height: 10px;
+/*
+  height: 0px;
+*/
+}
+

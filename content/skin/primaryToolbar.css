@@ -1,0 +1,210 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+@import url("./icons.css");
+
+@namespace xul url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+@namespace html url("http://www.w3.org/1999/xhtml");
+
+/* ===== primaryToolbar.css ===== */
+
+.mail-toolbox > #mail-bar3 {
+  padding: 0px 3px;
+}
+
+.chromeclass-toolbar toolbarseparator[lwtheme] {
+  margin: 1px 3px;
+}
+
+#folderPaneHeader #locationFolders,
+#folderPaneHeader > #folder-location-container,
+#folderPaneHeader > #folderpane-mode-selector {
+  flex: auto;
+}
+
+#folderPaneHeader {
+  margin-left: 1px;
+  box-shadow: var(--toolbarSidebar-box-shadow);
+  padding-top: 0px;
+  padding-right: 1px;
+}
+
+@media (-moz-platform: windows) {
+  #folderPaneHeader {
+    margin-inline-start: 0px;
+    padding-top: 1px;
+    padding-inline-start: 1px;
+    border-bottom: var(--toolbarSidebar-border-bottom);
+  }
+}
+
+#folderPaneHeader > .toolbarbutton-1,
+#folderPaneHeader toolbaritem > menulist {
+  margin: 0;
+}
+
+#folderPaneHeader toolbarbutton {
+  padding: 2px;
+}
+
+#folderPaneHeader toolbarbutton > toolbarbutton {
+  padding: 1px !important;
+}
+
+@media (-moz-platform: windows) {
+  #folderPaneHeader > .toolbarbutton-1,
+  #folderPaneHeader > toolbaritem > menulist {
+    margin-bottom: 1px;
+  }
+}
+
+/* restore the small icons checkbox in Customize window */
+#smallicons {
+  display: flex;
+}
+/* hide the small icons checkbox for the cardbook toolbar */
+[toolboxId="cardbook-toolbox"] #smallicons {
+  display: none;
+}
+
+/* ::::: primary toolbar buttons ::::: */
+
+toolbar[mode="icons"] .toolbarbutton-1[type="menu"] {
+  -moz-box-orient: horizontal;
+}
+
+toolbox[labelalign="bottom"] toolbar[mode="full"] .toolbarbutton-1[type="menu"] .toolbarbutton-menu-dropmarker {
+  display: none;
+}
+
+.toolbarbutton-1 .toolbarbutton-icon {
+  opacity: .85;
+}
+
+.toolbarbutton-1:hover .toolbarbutton-icon,
+.toolbarbutton-1[open] .toolbarbutton-icon {
+  opacity: 1;
+}
+
+.toolbarbutton-1[disabled="true"] .toolbarbutton-icon {
+  opacity: .5 !important;
+}
+
+.toolbarbutton-1 .toolbarbutton-icon {
+  width: calc(var(--icon-size) + 6px);
+  height: calc(var(--icon-size) + 6px);
+}
+
+#mail-bar3 .toolbarbutton-1 .toolbarbutton-icon {
+  min-width: calc(var(--icon-size) + 6px);
+  min-height: calc(var(--icon-size) + 6px);
+}
+
+toolbar[mode="icons"] .toolbarbutton-icon[label]:not([label=""]),
+toolbar[mode="icons"] .toolbarbutton-icon[type="menu"],
+toolbox[labelalign="bottom"] .toolbarbutton-icon[label]:not([label=""]),
+toolbox[labelalign="bottom"] .toolbarbutton-icon[type="menu"] {
+  margin-inline-end: 0;
+}
+
+toolbox[labelalign="end"] .toolbarbutton-1,
+toolbox[labelalign="end"] .toolbarbutton-1[type="menu-button"] > .toolbarbutton-menubutton-button,
+toolbar[mode="text"] .toolbarbutton-1,
+toolbar[mode="text"] .toolbarbutton-1[type="menu-button"] > .toolbarbutton-menubutton-button {
+  -moz-box-orient: horizontal;
+}
+
+toolbox[labelalign="end"] > toolbar[mode="full"] .toolbarbutton-1 .toolbarbutton-text {
+  padding-inline-start: 2px;
+}
+
+toolbox[labelalign="end"] > toolbar[mode="full"] deck .toolbarbutton-text {
+  text-align: start;
+}
+
+/* ::::: small primary toolbar buttons ::::: */
+
+toolbar[iconsize="small"] .toolbarbutton-1 .toolbarbutton-icon,
+#quick-filter-bar .toolbarbutton-1 .toolbarbutton-icon,
+#mail-toolbar-menubar2 .toolbarbutton-1 .toolbarbutton-icon,
+#header-view-toolbar .toolbarbutton-1 .toolbarbutton-icon,
+#attachment-view-toolbar .toolbarbutton-1 .toolbarbutton-icon,
+#tabs-toolbar .toolbarbutton-1 .toolbarbutton-icon {
+  width: calc(var(--icon-size) - 2px);
+  height: calc(var(--icon-size) - 2px);
+}
+
+#mail-bar3[iconsize="small"] .toolbarbutton-1 .toolbarbutton-icon {
+  min-width: var(--icon-size);
+  min-height: var(--icon-size);
+}
+
+#mail-bar3[iconsize="small"] .button-appmenu .toolbarbutton-icon {
+  min-width: calc(var(--icon-size) - 2px);
+  min-height: calc(var(--icon-size) - 2px);
+}
+
+#quick-filter-bar-expando .toolbarbutton-1 .toolbarbutton-icon {
+  display: none;
+}
+
+#tabs-toolbar .toolbarbutton-1[open="true"],
+#tabs-toolbar .toolbarbutton-1:not([disabled]):hover {
+  color: var(--button-hover-text-color);
+  background-color: var(--toolbar-button-hover-background-color);
+  border-color: var(--toolbar-button-hover-border-color);
+}
+
+/* ::::: unified toolbar buttons ::::: */
+
+:root,
+.button,
+#tabs-toolbar {
+  --icon-size: 20px;
+}
+
+:root[uidensity="compact"],
+[uidensity="compact"] .button {
+  --icon-size: 16px;
+}
+
+:root[uidensity="touch"],
+[uidensity="touch"] .button {
+  --icon-size: 24px;
+}
+
+#unifiedToolbar .toolbarbutton-1 .toolbarbutton-icon {
+  width: calc(var(--icon-size) + 2px);
+  height: calc(var(--icon-size) + 2px);
+}
+
+#unifiedToolbar .toolbar-button .toolbarbutton-icon,
+#unifiedToolbar .unified-toolbar-button .button-icon,
+#unified-toolbar-customization-tab-mail::part(icon),
+#unified-toolbar-customization-tab-addressbook::part(icon),
+#unified-toolbar-customization-tab-calendar::part(icon),
+#unified-toolbar-customization-tab-tasks::part(icon),
+#unified-toolbar-customization-tab-chat::part(icon),
+#unified-toolbar-customization-tab-settings::part(icon) {
+  width: var(--icon-size);
+  height: var(--icon-size);
+}
+
+#unifiedToolbar .search-bar {
+  max-width: 400px;
+}
+
+#unifiedToolbarContent.unified-toolbar {
+  padding-inline-start: 0px;
+}
+
+:root {
+  --unified-toolbar-padding: 2px !important;
+}
+
+@media (-moz-platform: windows) {
+  :root {
+    --unified-toolbar-padding: 4px 2px !important;
+  }
+}
