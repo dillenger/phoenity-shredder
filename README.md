@@ -1,2 +1,1 @@
-# phoenity-shredder
-# phoenity-shredder
+The original Phoenity Icons theme revisited
