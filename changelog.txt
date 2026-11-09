@@ -1,5 +1,9 @@
 Changelog for Phoenity Shredder
 
+4.5
+Removed lots of unused files and references.
+Removed max version.
+
 4.4
 Changed max version to Thunderbird 161.*.
 

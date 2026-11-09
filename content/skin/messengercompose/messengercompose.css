@@ -2,9 +2,6 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
-@namespace xul url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
-@namespace html url("http://www.w3.org/1999/xhtml");
-
 /* ::::: primary toolbar buttons ::::: */
 
 #compose-toolbox .toolbarbutton-1 .toolbarbutton-icon {
@@ -86,20 +83,6 @@
 .autocomplete-richlistitem[type="remote-err"] > .ac-site-icon {
   list-style-image: url("remote-addrbook-error.png");
 }
-
-/* ::::: addressing widget ::::: */
-
-/*
-treechildren::-moz-tree-image(GeneratedName) {
-  margin-inline-end: 2px;
-  list-style-image: url("abcard.png");
-}
-
-treechildren::-moz-tree-image(GeneratedName, MailList) {
-  margin-inline-end: 2px;
-  list-style-image: url("ablist.png");
-}
-*/
 
 /* ::::: format toolbar ::::: */
 

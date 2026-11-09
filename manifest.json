@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Phoenity Shredder",
   "description": "The original Phoenity Icons theme revisited",
-  "version": "4.4",
+  "version": "4.5",
   "author": "Dillinger",
   "homepage_url": "https://addons.phoenity.nl/themes.html",
   "theme": {
@@ -41,8 +41,7 @@
   "browser_specific_settings": {
     "gecko": {
       "id": "shredder@phoenity.nl",
-      "strict_min_version": "115.0",
-      "strict_max_version": "162.*"
+      "strict_min_version": "115.0"
     }
   },
   "icons": {
